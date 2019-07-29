@@ -1,0 +1,15 @@
+To use postGIS on mac OS: 
+
+sudo -u postgres psql;
+
+DATABASE IF EXISTS dbname;
+
+CREATE DATABASE dbname;
+
+psql -U [superuser] [database]
+
+CREATE EXTENSION postgis;
+
+psql.exe –U[user] postgres –d[dbname] gisdata < D:\root\path\gisdata.sql = 
+
+\du ––– List of roles
