@@ -1,0 +1,89 @@
+git init - створює файли для конфігурації нового проекту 
+
+--system 
+
+--global
+
+--local(default)
+
+git config --list --global 
+
+git config -h - oll option and descraption 
+git help config 
+
+alias.comand - short cat 
+
+git config alias.sayhi '!git ...; git else ...'
+
+// save file 
+
+core.autocrlf - автоматический перевод строки для Винди 
+	true  - if has 
+	input - is you not have windows user but want it 
+	false - not use 
+
+git 
+.gitattrutes - files of git uses 
+
+**/*.log anywere 
+**/app/chache - anywere 
+/app/ - at home 
+docs/**/*.html - anywere 
+
+git config include.path ../gitconfig 
+
+commit 
+	git show 
+	git commit path 
+	git add .  - added all 
+	git reset HEAD .folder - збрасывает все настройки для 
+	git commit -m 'Fixid the problem'
+
+	git commit -a -m 'Rename hello to helloGitty' - не добавляет новые файлы
+	git commit -m 'Ignore log files' .gitignore
+	git remote add origin
+	git commit -m "First commit"
+	git push -u origin master
+	git remote rename origin somelse  - переименование удаленного репозитория
+	git remote rm origin – удалит сервер origin
+
+	git remote – покажет все удаленные репозитори
+	git remote -v  - показать вместе с именем и удаленные адреса 
+
+	git remote add [name] git:[url] добавление удалённых репозиториев
+	git remote add [name] [url]
+	
+	git fetch [name] извлечение/получени информации с репозитория
+	git push [name]
+	git branch [name] 
+	git push [name url] [branch name]git
+
+	git reset [path file] - delete file from commit
+
+	git log - просмотр истории коммитов
+	git branch respy-web-portfolio
+
+
+	git checkout -b stage1 - создать новую ветку и переключится на нее
+	git marge [ветка] – слияние веток
+	git diff [] [] - сравнивание веток 
+	git pull - получить последнюю версию с сайта 
+	git tag [tag] [первые десять символов соответствующего коммита] - добавление тега
+	git log - информация о коммитах
+	gitk – программа для просмотра внутренностей проекта
+	git checkout -b hotfix - create branch and switch to them
+
+	git rm -n – dry run - удалить папку .git
+		-r allow recursive removal 
+		-q do not list removed files 
+
+	git clone <repo path> -
+	npm install install 
+	git merge style – перед зливанням до мастеру треба на нього переключитися
+
+	git rm --cached mylogfile.log - remove file from tree
+
+	git push origin master --force 
+
+	git reset HEAD .gitignore 
+
