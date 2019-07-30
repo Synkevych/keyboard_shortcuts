@@ -2,14 +2,26 @@ To use postGIS on mac OS:
 
 sudo -u postgres psql;
 
-DATABASE IF EXISTS dbname;
-
-CREATE DATABASE dbname;
-
 psql -U [superuser] [database]
 
-CREATE EXTENSION postgis;
-
-psql.exe –U[user] postgres –d[dbname] gisdata < D:\root\path\gisdata.sql = 
+psql.exe –U[user] postgres –d[dbname] gisdata < D:\root\path\gisdata.sql
 
 \du ––– List of roles
+\db ––– List of tablespaces
+\l  ––– List all databases
+\i pathToSQLFile - load SQL script
+ 
+DATABASE IF EXISTS dbname;
+CREATE DATABASE dbname;
+CREATE EXTENSION postgis;
+
+Show postgreSQL version:
+    postgres -V
+    pg_config --version 
+    
+Path to data:
+    /Library/PostgreSQL/9.6/data
+
+To change the port(if you have 2 version Postgres:
+    psql -U postgres -p 5433
+    
