@@ -14,6 +14,7 @@ psql.exe –U[user] postgres –d[dbname] gisdata < D:\root\path\gisdata.sql
 DATABASE IF EXISTS dbname;
 CREATE DATABASE dbname;
 CREATE EXTENSION postgis;
+SELECT PostGIS_full_version();
 
 Show postgreSQL version:
     postgres -V
