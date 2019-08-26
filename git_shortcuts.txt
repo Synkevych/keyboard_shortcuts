@@ -79,6 +79,7 @@ git log -p -w 		// show the patch information, but will not highlight lines wher
 git log --oneline 
 
 git diff 		// view changes that have been made but haven't been commited yet
+
 .gitignore
 - # marks line as a comment
 - * matches 0 or more characters
@@ -86,4 +87,23 @@ git diff 		// view changes that have been made but haven't been commited yet
 - [abc] - matches a, b, or c
 - ** matches nested directories a/**/z matches 
 
-
+Tag used to add point  out particular commits to make them stand out from oters.
+git tag -a v1.0 	// create an annotated flag 
+git tag -d v1.0 [SHA]	// delete tag with name v1.0 
+git branch name SHA	// create new branch and have it point to the commit with SHA
+git branch -D sidebar
+git merge 
+git reset --hard HEAD^
+git commit --amend	// Alter the most-recent commit 
+git revert SHA 		// Reverse given commit
+git reset 		// Erases commit 
+git checkout -- file.type	//recovery file.type 
+git checkout HEAD hello.rb 	//won't show differences
+git revert HEAD^		//git try to undo past changes, while any changes made leter will remain untoched
+HEAD^ || HEAD~ || HEAD~1 	// refer to parent commit 
+HEAD^^ || HEAD~2		// refer to grandparent commit
+^	// indicate the parent commit
+~	// indicate the first parent commit
+git reset --mixed HEAD~1  or git reset HEAD~1 	// opent current commit files in the Working Directory
+git reset --soft HEAD~1  	// move files to the Staging Index 
+git reset --hard HEAD~1  	// move files to the Trash and open  previous commit
