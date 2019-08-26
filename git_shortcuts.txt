@@ -1,29 +1,4 @@
-git init - створює файли для конфігурації нового проекту 
-
---system 
-
---global
-
---local(default)
-
-git config --list --global 
-
-git config -h - oll option and descraption 
-git help config 
-
-alias.comand - short cat 
-
-git config alias.sayhi '!git ...; git else ...'
-
-// save file 
-
-core.autocrlf - автоматический перевод строки для Винди 
-	true  - if has 
-	input - is you not have windows user but want it 
-	false - not use 
-
-git 
-.gitattrutes - files of git uses 
+git init - create new repo 
 
 **/*.log anywere 
 **/app/chache - anywere 
@@ -60,10 +35,6 @@ commit
 
 	git reset [path file] - delete file from commit
 
-	git log - просмотр истории коммитов
-	git branch respy-web-portfolio
-
-
 	git checkout -b stage1 - создать новую ветку и переключится на нее
 	git marge [ветка] – слияние веток
 	git diff [] [] - сравнивание веток 
@@ -86,4 +57,33 @@ commit
 	git push origin master --force 
 
 	git reset HEAD .gitignore 
+## Git Log Navigating
+
+to scroll down, press
+j or ↓ to move down one line at a time
+d to move by half the page screen
+f to move by a whole page screen
+
+to scroll up, press
+k or ↑ to move _up_ one line at a time
+u to move by half the page screen
+b to move by a whole page screen
+press q to quit out of the log (returns to the regular command prompt)
+
+git log --stat 		// display the files that have been changed in the commit, as well as the number of lines that have been added or deleted.
+
+git log --stat -p	// displays both with the stats info above the patch info 
+
+git log -p -w 		// show the patch information, but will not highlight lines where only whitespace changes have occurred. 
+
+git log --oneline 
+
+git diff 		// view changes that have been made but haven't been commited yet
+.gitignore
+- # marks line as a comment
+- * matches 0 or more characters
+- ? matches 1 character 
+- [abc] - matches a, b, or c
+- ** matches nested directories a/**/z matches 
+
 
