@@ -107,3 +107,7 @@ HEAD^^ || HEAD~2		// refer to grandparent commit
 git reset --mixed HEAD~1  or git reset HEAD~1 	// opent current commit files in the Working Directory
 git reset --soft HEAD~1  	// move files to the Staging Index 
 git reset --hard HEAD~1  	// move files to the Trash and open  previous commit
+
+git commit -a -m "Some message" // Tell the command to automatically stage files that have been modified and deleted, but 	new files you have not told Git about are not affected.
+
+git cherry-pick SHA 	// Apply the changes introduced by some existing commits
