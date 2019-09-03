@@ -6,8 +6,6 @@ git init - create new repo
 docs/**/*.html - anywere 
 
 git config include.path ../gitconfig 
-
-commit 
 	git show 
 	git commit path 
 	git add .  - added all 
@@ -115,6 +113,12 @@ git clone url.git folder-name	// if you need change default folder name
 
 git pull 	// Fetch or Sync our local repository with the remote one the same s $ git fetch
 git merge origin/master		// idea is merge origin/master with master
-- Поиск ошибок
+### Search for errors
+```git
 git bisect good/bad/reset 	// бынарный поиск помогает быстро проверить сотни коммитов в поисках появившейся ошибки.
-git blame -L 12,22 simplegit.rb 	// анотация файла, и ограничить вывод строки с 12-той по 22-рой.
+git blame -L 12,22 simplegit.rb 	// анотация файла, и ограничить вывод строки с 12-той по 22-рой
+```
+### File searching
+```git
+git ls-tree -r master --name-only    // show a list of the files that are being tracked
+```
