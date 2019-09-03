@@ -1,9 +1,5 @@
+```git
 git init - create new repo 
-
-**/*.log anywere 
-**/app/chache - anywere 
-/app/ - at home 
-docs/**/*.html - anywere 
 
 git config include.path ../gitconfig 
 	git show 
@@ -52,11 +48,12 @@ git config include.path ../gitconfig
 
 	git rm --cached mylogfile.log - remove file from tree
 
-	git push origin master --force 
+	git push origin master --force  
 
-	git reset HEAD .gitignore 
+	git reset HEAD .gitignore
+```
 ## Git Log Navigating
-
+```git
 to scroll down, press
 j or ↓ to move down one line at a time
 d to move by half the page screen
@@ -77,15 +74,22 @@ git log -p -w 		// show the patch information, but will not highlight lines wher
 git log --oneline 
 
 git diff 		// view changes that have been made but haven't been commited yet
-
-.gitignore
+```
+### Gitignore configuration, file name - .gitignore
+```git
 - # marks line as a comment
 - * matches 0 or more characters
 - ? matches 1 character 
 - [abc] - matches a, b, or c
-- ** matches nested directories a/**/z matches 
+- ** matches nested directories a/**/z matches
+**/*.log anywere 
+**/app/chache - anywere 
+/app/ - at home 
+docs/**/*.html - anywere 
+```
 
-Tag used to add point  out particular commits to make them stand out from oters.
+### Tag used to add point  out particular commits to make them stand out from oters.
+```git
 git tag -a v1.0 	// create an annotated flag 
 git tag -d v1.0 [SHA]	// delete tag with name v1.0 
 git branch name SHA	// create new branch and have it point to the commit with SHA
@@ -113,11 +117,15 @@ git clone url.git folder-name	// if you need change default folder name
 
 git pull 	// Fetch or Sync our local repository with the remote one the same s $ git fetch
 git merge origin/master		// idea is merge origin/master with master
+```
+
 ### Search for errors
+
 ```git
 git bisect good/bad/reset 	// бынарный поиск помогает быстро проверить сотни коммитов в поисках появившейся ошибки.
 git blame -L 12,22 simplegit.rb 	// анотация файла, и ограничить вывод строки с 12-той по 22-рой
 ```
+
 ### File searching
 ```git
 git ls-tree -r master --name-only    // show a list of the files that are being tracked
