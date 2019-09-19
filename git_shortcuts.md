@@ -4,35 +4,35 @@ git init - create new repo
 git config include.path ../gitconfig 
 	git show 
 	git commit path 
-	git add .  - added all 
-	git reset HEAD .folder - збрасывает все настройки для 
+	git add . || * || -A  - added all file to stage pre-commit
+	
+	git pull - получить последнюю версию с сайта 
+	
+	git reset - збрасывает все настройки для указаной ветки
+	
 	git commit -m 'Fixid the problem'
 
 	git commit -a -m 'Rename hello to helloGitty' - не добавляет новые файлы
-	git commit -m 'Ignore log files' .gitignore
-	git remote add origin
-	git commit -m "First commit"
-	git push -u origin master
-	git remote rename origin somelse  - переименование удаленного репозитория
-	git remote rm origin – удалит сервер origin
-
-	git remote – покажет все удаленные репозитори
-	git remote -v  - показать вместе с именем и удаленные адреса 
-
-	git remote add [name] git:[url] добавление удалённых репозиториев
-	git remote add [name] [url]
+	
+	git push -u origin master - set upstream for git pull/status
+	
+git remote – покажет все удаленные репозитори
+	+ add origin - добавление удаленного адреса 
+	+ rename origin somelse  - переименование удаленного репозитория
+	+ rm origin – удалит сервер origin
+	+ -v  - показать вместе с именем и удаленные адреса 
+	+ add [name] git:[url] добавление удалённых репозиториев
 	
 	git fetch [name] извлечение/получени информации с репозитория
 	git push [name]
-	git branch [name] 
+	git branch [name] || git checkout -b name - создание ветки || и переключение на нее
 	git push [name url] [branch name]git
 
 	git reset [path file] - delete file from commit
 
-	git checkout -b stage1 - создать новую ветку и переключится на нее
 	git marge [ветка] – слияние веток
 	git diff [] [] - сравнивание веток 
-	git pull - получить последнюю версию с сайта 
+
 	git tag [tag] [первые десять символов соответствующего коммита] - добавление тега
 	git log - информация о коммитах
 	gitk – программа для просмотра внутренностей проекта
