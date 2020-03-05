@@ -35,3 +35,4 @@ ls -a - see hidden files
 rm -R foldername - delete folder and include files 
 ps aux | grep JRodos
 
+./mnt/c   - localization of Windows disk C (using Ubuntu inside Windows)
