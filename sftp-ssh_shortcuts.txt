@@ -7,9 +7,11 @@ mget *.nc	- download more then one file
 mkdir remote - create directory 
 rm filename - remove file 
 mv oFname nFname - rename
-rmdir nameFolder -remove directory
+rmdir nameFolder - remove directory
+
 pwd on remote and lpwd on local.
 cd on remote and lcd on local.
+
 rm -dr /path-file - remove directory and all files 
 file * - show all file in directory
 ls -ld .?* – show only hidden file
@@ -27,12 +29,12 @@ Open File
   
 sftp -oPort=22 userName@256.256.256.256
 
-du -h  - see size used avail use
-du -sh * 
-du -sh /folder_path
-di -sh ~ 
-ls -a - see hidden files 
-rm -R foldername - delete folder and include files 
-ps aux | grep JRodos
+`du -h` - see size used avail use  
+`du -sh *` show list of folders and files size in current folder  
+`du -sh` - show the size of the current folder in a readable format  
+`du -sh ~` - show the size of the current user folder  
+`ls -a` - see all files (with hidden)  
+`rm -R foldername` - delete folder and include files  
+`ps aux | grep JRodos` - find a program amoung running process  
 
 ./mnt/c   - localization of Windows disk C (using Ubuntu inside Windows)
